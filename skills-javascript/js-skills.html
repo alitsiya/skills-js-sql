@@ -338,7 +338,11 @@ function reverseString() {
 </fieldset>
 
 <script>
-
+$("form").submit(function(e) {
+  e.preventDefault();
+$('#agreeable-text').text($('#favorite-food-input').val())
+});
+$('#agreeable-text').text($('#favorite-food-input').val())
 </script>
 
 <div class="hint">

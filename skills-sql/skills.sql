@@ -182,7 +182,8 @@ INSERT INTO Awards VALUES ('IIHS Safety Award', 2015, 'the id for the 2015 Subar
 
 SELECT models.name                                                                       
 FROM models                                                                                     
-JOIN brands ON models.year=brands.founded;
+JOIN brands ON models.year=brands.founded
+WHERE brands.name = models.brand_name;
 -- it's easier just inner join two tables by year
 
 
